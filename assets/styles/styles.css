@@ -194,7 +194,7 @@
   }
   
   #favorites {
-    background: url("../images/background.jpeg") center center no-repeat;
+    background: url("../images/background.jpg") center center no-repeat;
     background-size: cover;
     height: calc(100vh - 51.5px);
     display: flex;
