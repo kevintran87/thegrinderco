@@ -1,0 +1,221 @@
+.hero-full-screen h1 {
+    font-size: 85px;
+    color: white;
+    margin-top:15px;
+    text-shadow: 0 0 4px black;
+  }
+  
+  .hero-full-screen h2, #favorites h2 {
+    font-size: 20px;
+    color: white;
+    font-weight: 90px;
+    text-shadow: 0 0 4px black;
+  }
+  
+  .hero-full-screen .foodContainer label, .hero-full-screen .foodContainer legend, .hero-full-screen p, .hero-full-screen h2, .hero-full-screen h1 {
+    color: white;
+    text-shadow: 0 0 4px black;
+  }
+  
+  .hero-full-screen {
+    height: calc(100vh - 51.5px);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: url("../images/background.jpeg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    font: white;
+    position: relative;
+  }
+  
+  .hero-full-screen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-full-screen .middle-content-section {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    height: calc(100vh - 51.5px);
+    width: 100vw;
+    padding: 0 80px;
+  }
+  
+  @media only screen and (max-width: 890px){
+    .hero-full-screen .middle-content-section {
+      padding: 0 32px;
+    }
+  }
+  
+  .hero-full-screen .top-content-section {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero-full-screen .bottom-content-section {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: white;
+    text-align: center;
+  }
+  
+  .hero-full-screen .top-bar {
+    background: transparent;
+    text-align: center;
+  }
+  
+  .hero-full-screen .top-bar .menu {
+    background: transparent;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-full-screen .top-bar .menu-text {
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-full-screen .top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-full-screen .top-bar .menu a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .card {
+    background-color:rgba(241, 237, 237, 0.1) ;
+    border: solid black 2px;
+    border-radius: 15px;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .card img {
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 350 px;
+    border-radius: 5px;
+  }
+  
+  .card p {
+    height: 20px;
+    padding: 0px;
+    margin:0px;
+  }
+  
+  .card h2 {
+    padding: 0px;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    text-align: left;
+  }
+  
+  .drink-card {
+    width: 700px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4) ;
+    color: white;
+  }
+  
+  .drink-card img {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .drink-card h2 {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .drink-card ul {
+    margin: auto;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .drink-card p {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .drink-card button {
+    width: 100%;
+  }
+  
+  #cocktail-btn {
+    margin: auto;
+  }
+  
+  #cocktail {
+    background: url("../images/background.jpeg") center center no-repeat;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  #favorites {
+    background: url("../images/background.jpeg") center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 51.5px);
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 32px;
+    align-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  #favorites .drink-card {
+    min-width: 400px;
+    align-self: stretch;
+    min-height: 100%;
+  }
+  
+  a {
+    color: #1779ba;
+  }
+  
+  a:focus, a:hover {
+    color: #1468a0;
+  }
